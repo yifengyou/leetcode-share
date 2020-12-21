@@ -22,7 +22,7 @@ class Solution(object):
         for index1, value in enumerate(nums):
             if target - value in hash_map:
                 index2 = hash_map[target - value]
-                if index1 != index2:
+                if index1 < index2:
                     return [index1 + 1, index2 + 1]
 
 
